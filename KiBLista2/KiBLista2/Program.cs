@@ -19,7 +19,7 @@ namespace KiBLista2
 
             var zad2 = new Zad2(path);
             var result = new List<Result>();
-            
+
             foreach (char c in alphabet)
             {
                 result.AddRange(zad2.DoWorks((byte)c));
@@ -28,6 +28,29 @@ namespace KiBLista2
             result = result.OrderBy(x => x.iterator).ToList();
 
             result.ForEach(x => x.Check());
+
+
+            string[] plains = new string[20];
+
+            int last = 0;
+            for (int i = 0; i < plains.Length; i++)
+            {
+                for (int j = 0; j < result.Count; j++)
+                {
+                    bool b = true;
+
+                    try
+                    {
+                        b = result[j].iterator == result[j - 1].iterator;
+                    }
+                    catch (ArgumentOutOfRangeException) { }
+
+                    if (result[j].isGood && b)
+                    {
+                        plains[i] = plains[i] + (char)result[j].result[i];
+                    }
+                }
+            }
 
             for (int i = 0; i < result.Count; i++)
             {
@@ -40,6 +63,11 @@ namespace KiBLista2
                     }
                     Console.Write("\n");
                 }
+            }
+            Console.Write("\n"); Console.Write("\n"); Console.Write("\n");
+            foreach (string s in plains)
+            {
+                Console.WriteLine(s + "\n\n\n\n");
             }
         }
     }
@@ -170,7 +198,7 @@ namespace KiBLista2
         public byte[] result { get; set; }
         public bool isGood { get; private set; }
 
-        private string alphabet = "aąbcćdeęfghijklłmnńoóprsśtuwyzźżAĄBCĆDEĘFGHIJKLŁMNŃOÓPRSŚTUWYZŹŻqQvVxXyY  ";
+        private string alphabet = "aąbcćdeęfghijklłmnńoóprsśtuwyzźżAĄBCĆDEĘFGHIJKLŁMNŃOÓPRSŚTUWYZŹŻqQvVxXyY .,1234567890!?";
 
         //private string alphabet = "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM,./;'[]\"\\<>?:{}|!@#$%^&*()_+-=";
 
