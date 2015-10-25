@@ -198,7 +198,7 @@ namespace KiBLista2
         public byte[] result { get; set; }
         public bool isGood { get; private set; }
 
-        private string alphabet = "aąbcćdeęfghijklłmnńoóprsśtuwyzźżAĄBCĆDEĘFGHIJKLŁMNŃOÓPRSŚTUWYZŹŻqQvVxXyY .,1234567890!?";
+        private string alphabet = "aąbcćdeęfghijklłmnńoóprsśtuwyzźżAĄBCĆDEĘFGHIJKLŁMNŃOÓPRSŚTUWYZŹŻqQvVxXyY .,1234567890!?"; 
 
         //private string alphabet = "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM,./;'[]\"\\<>?:{}|!@#$%^&*()_+-=";
 
