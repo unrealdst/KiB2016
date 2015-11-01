@@ -15,7 +15,6 @@ namespace KiBLista3
         {
             string path = "C:\\Users\\Cebulotron3000\\Documents\\My Games\\FarmingSimulator2015\\mods\\cash.wav";
             byte[] test = System.IO.File.ReadAllBytes(path);
-            //siema, Kajtek. Prosimy o max pkt dla twórcy kodu
 
             var zad1 = new Zad1(path,"","");
 
