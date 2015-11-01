@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KiBLista2", "KiBLista2\KiBLista2.csproj", "{0E60A293-B8DF-4652-A437-EF5F8A6E0C03}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KiBLista3", "KiBLista3\KiBLista3.csproj", "{C3F1CCF6-EA6B-4C51-9903-430E3584E421}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{0E60A293-B8DF-4652-A437-EF5F8A6E0C03}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E60A293-B8DF-4652-A437-EF5F8A6E0C03}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E60A293-B8DF-4652-A437-EF5F8A6E0C03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3F1CCF6-EA6B-4C51-9903-430E3584E421}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3F1CCF6-EA6B-4C51-9903-430E3584E421}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3F1CCF6-EA6B-4C51-9903-430E3584E421}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3F1CCF6-EA6B-4C51-9903-430E3584E421}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
